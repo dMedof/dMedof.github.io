@@ -3,51 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Power BI Report</title>
+    <title>Reverse Logistics ESG Data Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #f0f0f0;
+            background-color: #121212;
+            color: #ffffff;
         }
         .container {
-            max-width: 1200px;
-            width: 100%;
-            background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
+            max-width: 800px;
+            width: 90%;
+            background-color: #1e1e1e;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+            border-radius: 10px;
             text-align: center;
         }
-        .report-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 aspect ratio */
-            height: 0;
-            overflow: hidden;
+        h1 {
+            color: #bb86fc;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            font-weight: 700;
         }
-        .report-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
+        .launch-notice {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .date {
+            color: #03dac6;
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+        .cta {
+            background-color: #bb86fc;
+            color: #000000;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta:hover {
+            background-color: #03dac6;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>My Power BI Report</h1>
-        <div class="report-container">
-            <iframe title="My Report" src="https://app.powerbi.com/view?r=YOUR_EMBED_CODE_HERE" allowFullScreen="true"></iframe>
+        <h1>Reverse Logistics ESG Data Explorer</h1>
+        <div class="launch-notice">
+            <p>Get ready to explore the future of sustainable logistics!</p>
+            <p>Our interactive data explorer will be launched on</p>
+            <p class="date">September 3rd, 2024</p>
+            <p>Stay tuned for groundbreaking insights into ESG practices in reverse logistics.</p>
         </div>
+        <a href="#" class="cta">Remind Me</a>
     </div>
 </body>
 </html>
