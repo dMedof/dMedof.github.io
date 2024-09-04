@@ -52,17 +52,25 @@
             transition: background-color 0.3s ease;
             display: inline-block;
             margin-top: 20px;
+            font-size: 1.5em;
         }
         .cta:hover {
             background-color: #03dac6;
         }
-        /* Style for the Airtable iframe */
-        .airtable-embed {
-            width: 100%;
-            height: 600px;
+        .link-container {
             margin-top: 40px;
-            background: transparent;
-            border: 1px solid #ccc;
+        }
+        .big-link {
+            font-size: 2em;
+            font-weight: 700;
+            display: block;
+            margin: 20px 0;
+            text-decoration: none;
+            color: #bb86fc;
+            transition: color 0.3s ease;
+        }
+        .big-link:hover {
+            color: #03dac6;
         }
     </style>
 </head>
@@ -75,9 +83,13 @@
             <p class="date">September 4th, 2024</p>
         </div>
 
-        <!-- Airtable embed iframe -->
-        <iframe class="airtable-embed" src="https://airtable.com/embed/appFskYBKTka4Ki82/shraz1veEDH1fJwKL" frameborder="0"></iframe>
+        <!-- Links to Airtable views -->
+        <div class="link-container">
+            <a href="https://airtable.com/appFskYBKTka4Ki82/shraz1veEDH1fJwKL" class="big-link" target="_blank">Company View</a>
+            <a href="https://airtable.com/appFskYBKTka4Ki82/shrwC0yL3xEb9eZm3" class="big-link" target="_blank">Category View</a>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=SMwdM2HjGEO09RCM5G3nhjSXAY3AnZZFg9l7lfEFQClUN0xOQUg4S1U4RlRJRTJNMTBQSElIWUE5Ri4u" class="big-link" target="_blank">Full Data Access here! View</a>
 
+        </div>
     </div>
 </body>
 </html>
