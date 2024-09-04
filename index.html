@@ -55,18 +55,37 @@
         }
         .link-container {
             margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .big-link {
-            font-size: 1.5em;
+            font-size: 1.2em;
             font-weight: 600;
-            display: block;
-            margin: 15px 0;
             text-decoration: none;
             color: #2b4d66;
-            transition: color 0.3s ease;
+            background-color: #e8f0f5;
+            border: 2px solid #2b4d66;
+            border-radius: 5px;
+            padding: 12px 20px;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 300px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .big-link:hover {
-            color: #1f3b50;
+            background-color: #2b4d66;
+            color: #ffffff;
+        }
+        .big-link.highlight {
+            background-color: #2b4d66;
+            color: #ffffff;
+        }
+        .big-link.highlight:hover {
+            background-color: #1f3b50;
         }
     </style>
 </head>
@@ -74,13 +93,14 @@
     <div class="container">
         <h1>Reverse Logistics ESG Data Explorer</h1>
         <div class="launch-notice">
-            <p>Get ready to explore the future of sustainable reverse logistics! See below for limited previews of the data, and please use the bottom link to request full access on Airtable! Feel free to email davidm@rla.org with any questions! </p>
+            <p>Get ready to explore the future of sustainable reverse logistics! See below for limited previews of the data, and please use the bottom link to request full access on Airtable! Feel free to email davidm@rla.org with any questions!</p>
         </div>
-
         <!-- Links to Airtable views -->
         <div class="link-container">
             <a href="https://airtable.com/appFskYBKTka4Ki82/shraz1veEDH1fJwKL" class="big-link" target="_blank">Preview: Companies</a>
             <a href="https://airtable.com/appFskYBKTka4Ki82/shrwC0yL3xEb9eZm3" class="big-link" target="_blank">Preview: Categories</a>
-            <a href="https://forms.office.com/r/PCvHLw4zxY" class="big-link" target="_blank">*Request Full Access*</a>
-
-            
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=SMwdM2HjGEO09RCM5G3nhjSXAY3AnZZFg9l7lfEFQClUN0xOQUg4S1U4RlRJRTJNMTBQSElIWUE5Ri4u" class="big-link highlight" target="_blank">*Request Full Access*</a>
+        </div>
+    </div>
+</body>
+</html>
